@@ -17,7 +17,7 @@ H = np.zeros((h,w),dtype = np.float32)
 for i in range(h):
     for j in range(w):
         D = np.sqrt((i-h/2)**2 + (j-w/2)**2)
-        H[i][j] = 1/(1+(D/D0)**2o)
+        H[i][j] = 1/(1+(D/D0)**(2*o))
 
 cv2.imshow('H',H)
 cv2.waitKey()
